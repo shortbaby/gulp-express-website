@@ -1,0 +1,13 @@
+{
+    "appenders": {
+        "console": { "type": "console" },
+        "access": {
+            "type": "dateFile",
+            "filename": "log/access.log",
+            "pattern": "-yyyy-MM-dd"
+        }
+    },
+    "categories": {
+        "default": { "appenders": ["console", "access"], "level": "info" }
+    }
+}
